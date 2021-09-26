@@ -1,5 +1,5 @@
 class truk:
-    def _init_(self, warna, tahun, merk):
+    def __init__(self, warna, tahun, merk):
         self.warna = warna
         self.tahun = tahun
         self.merk = merk
@@ -10,8 +10,8 @@ class truk:
         print(self.merk)
 
 class diesel(truk):
-     def _init_(self, warna, tahun, merk):
-         truk._init_(self, warna, tahun, merk)
+     def __init__(self, warna, tahun, merk):
+         truk.__init__(self, warna, tahun, merk)
          self.bahanbakar = "Solar"
 
      def Diesel(Self):
@@ -22,8 +22,8 @@ class diesel(truk):
 
 
 class fuso(truk):
-    def _init_(self, warna, tahun, merk):
-          truk._init_(self, warna, tahun, merk)
+    def __init__(self, warna, tahun, merk):
+          truk.__init__(self, warna, tahun, merk)
           self.bahanbakar = "Pertamina Dex"
 
     def Fuso(Self):
